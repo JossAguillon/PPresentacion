@@ -1,0 +1,210 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+/*AQUI COMIENZAN LOS ESTILOS DE LA NAVBAR*/
+.Navbar{
+    z-index: 1;
+    width: 65vw;
+    height: 40px;
+    background-color: rgb(154, 0, 0);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    top: 2vh;
+    left: calc((100vw - 65vw) / 2);
+    border-radius: 11px;
+    box-shadow: -2px 7px 6px rgb(4, 0, 0);
+    box-sizing: border-box;
+}
+
+.Navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 180px 0 180px;
+    
+
+}
+
+.Navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.inicio .contenido-section header{
+   
+    background-color: blue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    margin: 0;
+    
+}
+
+
+.foto img {
+    top: 100px;
+    width: 130px;
+    position: absolute;
+    height: 130px;
+    object-fit: contain;
+    background-color: black;
+    background-size: cover;
+    margin: 0px;
+    border-radius: 50%;
+    border: 5px Solid rgb(255, 255, 255);
+
+}
+.foto{
+    background: url(./assets/3s.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobremi{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.sobremi .fila{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+
+}
+.sobremi .fila .columna{
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.sobremi .fila .columna h1{
+    text-align: center;
+}
+
+
+.habilidades{
+    background-color: rgb(246, 194, 194);
+}
+.resumen{
+    background-color: rgb(80, 93, 232);
+}
+.contenido{
+    width: 100%;
+    height: fit-content;
+
+}
+.contenido .descripcion{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.footer{
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100px;
+    background-color: aqua;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+}
+.footer .iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer .iconos a svg{
+    width: 35px;
+    opacity: 0.8;
+}
+
+.contacto h2{
+    position: absolute;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.contacto{
+    height: fit-content;
+    width: 40vw;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    
+}
+
+.sliderphoto{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.sliderphoto ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 300%;
+    animation: cambio 20s infinite alternate linear;
+
+}
+
+.sliderphoto li{
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+}
+
+.sliderphoto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    33% {margin-left: 0;}
+  
+    33% {margin-left: -100%;}
+    66% {margin-left: -100%;}
+  
+    66% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+/*AQUI VAN LOS ESTILOS PARA PANTALLA CHIQUITA*/
+@media (max-width: 1200px) {
+
+    .Navbar ul{
+        padding: 0px 20px 0px 20px;
+    }
+}
